@@ -4,6 +4,16 @@
 """
 
 
-def find_in_2array():
-    pass
+def find_in_2array(array2, num):
+    if not array2:
+        return False
+    for row in array2:
+        for element in row:
+            if num == element:
+                return True
+    return False
 
+
+array2 = [[2, 4, 5, 6], [8, 9, 10, 11]]
+array = []
+print(find_in_2array(array, 1))
